@@ -1,26 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './styles.css'
 
 const TicketContent = ({ data }) => {
-  const { ticketContent, adminAnswers } = data
+  const { ticketContent, adminAnswer } = data
   return (
-    <>
-      <p className="ticketDetailsTitle">Başvuru Nedeni</p>
+    <div className='ticketContentContainer'>
+      <p className='ticketDetailsTitle'>Başvuru Nedeni</p>
       <div className='ticketContent'>{ticketContent}</div>
-      {adminAnswers &&
-          adminAnswers.map((answer, index) => (
-            <div key={index} className="adminAnswer">
-              {answer}
-            </div>
-          ))}
-    </>
+      <div className="adminAnswers">
+      <span>Başvuru Yanıt</span>
+        {
+        adminAnswer && adminAnswer.map((item, index) => (
+          <p key={index}>{item}</p>
+        ))
+      }
+      </div>
+    </div>
   )
 }
 
 TicketContent.propTypes = {
   data: PropTypes.shape({
     ticketContent: PropTypes.string.isRequired,
-    adminAnswers: PropTypes.arrayOf(PropTypes.string)
+    adminAnswer: PropTypes.array
   }).isRequired
 }
 

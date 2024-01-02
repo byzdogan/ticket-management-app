@@ -5,6 +5,7 @@ import useTicket from 'src/contexts/TicketContext'
 import { useCustomParams } from 'src/hooks/useParams'
 import './styles.css'
 import UpdateTicketForm from './UpdateTicketForm'
+import TicketStatusAdmin from './TicketStatus'
 
 const AdminTicketDetails = () => {
   const { ticketID } = useCustomParams()
@@ -23,7 +24,8 @@ const AdminTicketDetails = () => {
                             <div className="leftContainer">
                                 <UserDetails data={ticketData} />
                             </div>
-                            <div className="rightContainer">
+              <div className="rightContainer">
+                              <TicketStatusAdmin data={ticketData} />
                               <TicketContent data={ticketData} />
                               <UpdateTicketForm />
                             </div>

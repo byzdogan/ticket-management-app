@@ -18,8 +18,8 @@ const TicketStatus = ({ data }) => {
 
 TicketStatus.propTypes = {
   data: PropTypes.shape({
-    ticketStatus: PropTypes.string.isRequired
-  }).isRequired
+    ticketStatus: PropTypes.string,
+  })
 }
 
 export default TicketStatus

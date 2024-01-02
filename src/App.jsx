@@ -55,11 +55,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/admin/basvuru-listesi',
-        element: <PrivateRoute><AdminMenu/><AdminDashboard/></PrivateRoute>
+        element: <PrivateRoute><AdminMenu /><AdminDashboard /></PrivateRoute>
       },
       {
         path: '/admin/basvuru/:ticketID',
-        element: <><PrivateRoute><AdminMenu/><AdminTicketDetails/></PrivateRoute></>
+        element: <PrivateRoute><AdminMenu/><AdminTicketDetails/></PrivateRoute>
       }
     ]
   }

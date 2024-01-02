@@ -43,7 +43,7 @@ export const TicketProvider = ({ children }) => {
     loading,
     getTicketData,
     tickets,
-    setAllTickets,
+    setAllTickets
   }
 
   return <TicketContext.Provider value={values}>{children}</TicketContext.Provider>

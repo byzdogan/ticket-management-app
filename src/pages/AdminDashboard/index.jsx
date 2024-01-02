@@ -23,13 +23,14 @@ const AdminDashboard = () => {
 
   if (loading) <div>Loading...</div>
   return (
-        <div className='ticketListContainer'>
-            <p>Sonuçlandırılmamış Başvurular</p>
+    <div className='ticketListContainer'>
+            <p>Başvurular</p>
             <table>
                 <thead>
                     <tr>
               <th>Başvuru Tarihi</th>
               <th>Ad Soyad</th>
+              <th>Başvuru Durumu</th>
               <th>Görüntüle</th>
             </tr>
           </thead>
@@ -38,6 +39,7 @@ const AdminDashboard = () => {
               <tr key={ticket.ticketID}>
                 <td>{ticket.createdAt.toDate().toLocaleString() }</td>
                 <td>{ticket.firstName} {ticket.lastName}</td>
+                <td>{ticket.ticketStatus}</td>
                 <td>
                   <CustomLink path={`/admin/basvuru/${ticket.documentID}`} text='Başvuruyu görüntüle'/>
                 </td>

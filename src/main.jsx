@@ -6,9 +6,9 @@ import './index.css'
 import { TicketProvider } from './contexts/TicketContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <>
     <TicketProvider>
       <App />
     </TicketProvider>
-  </React.StrictMode>
+  </>
 )
