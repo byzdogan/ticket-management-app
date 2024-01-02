@@ -1,0 +1,15 @@
+@import '../../../assets/styles/constants.css';
+/* Custom Input Css */
+
+.customInput {
+    height: 35px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1em;
+    border-color: var(--blue-color);
+}
+.customInput:focus {
+    background-color: var(--bg-color);
+    outline: none;
+}

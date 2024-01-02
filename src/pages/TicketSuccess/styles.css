@@ -1,0 +1,53 @@
+@import '../../assets/styles/constants.css';
+
+.ticketIDContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 8px;
+    max-width: 100%;
+    margin: 50px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#headerTitle{
+    font-size: 2rem;
+    font-weight: bolder;
+    display: block;
+    color: var(--blue-color);
+    margin-bottom: 40px;
+}
+
+#headerText {
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;  
+}
+
+#ticketID {
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 20px;
+    color: var(--blue-color);
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+#ticketID:hover {
+    color: var(--blue-color);
+    transform: translateY(-2px);
+    background-color: var(--hover-color);
+    color:black;
+}
+
+#warningText {
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: block;
+}

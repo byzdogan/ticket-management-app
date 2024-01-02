@@ -1,0 +1,63 @@
+@import '../../assets/styles/constants.css';
+/* Ticker Query Page CSS */
+ 
+.ticketQueryContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ticketQueryContainer input#ticketID {
+    margin: 0;
+}
+
+.ticketQueryContainer form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.message {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.ticketQueryContainer p {
+    color: crimson;
+    font-size: 0.8rem;
+}
+
+.queryTitle {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.highlight {
+    color: var(--blue-color);
+}
+
+@media (max-width: 640px) {
+
+    .ticketQueryContainer form {
+        flex-direction: column;
+    }
+
+    .ticketQueryContainer {
+        margin: 30px;
+        gap: 30px;
+    }
+}
+
+  
+

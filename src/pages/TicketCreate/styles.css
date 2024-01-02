@@ -1,0 +1,45 @@
+/* Ticket Create Page CSS */
+
+.ticketFormContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+.ticketFormContainer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftContainer,
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#file{
+    margin: 10px 0;
+}
+
+@media (min-width: 800px) {
+
+    .ticketFormContainer form {
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .leftContainer,
+    .rightContainer {
+        flex: 1;
+    }
+}

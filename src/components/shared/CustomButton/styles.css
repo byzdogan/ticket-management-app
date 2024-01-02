@@ -1,0 +1,14 @@
+@import '../../../assets/styles/constants.css';
+
+/* Custom Button css */
+
+.customButton {
+    background-color: var(--button-bg-color);
+    color: white;
+    border: none;
+}
+.customButton:hover {
+    background-color: var(--hover-color);
+    color: var(--blue-color);
+    transform: translateY(-2px);
+}

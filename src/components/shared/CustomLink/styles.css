@@ -1,0 +1,10 @@
+@import '../../../assets/styles/constants.css';
+
+a.customLink {
+    font-weight: bold;
+    color: var(--blue-color)
+}
+a.CustomLink:hover {
+    color: var(--hover-color)
+}
+
