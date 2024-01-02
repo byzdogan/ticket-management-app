@@ -1,5 +1,5 @@
 # Ticket Management App
-[Netlify Linki](https://main--serene-zuccutto-cfd004.netlify.app/basvuru-olustur)
+[Netlify Linki](https://animated-conkies-42a44d.netlify.app)
 ## Technologies which used in Ticket Management App
 - React Hooks
 - React Router
