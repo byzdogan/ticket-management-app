@@ -43,7 +43,7 @@ UserDetails.propTypes = {
   data: PropTypes.shape({
     firstName: PropTypes.string,
     lastName: PropTypes.string,
-    identityNumber: PropTypes.number,
+    identityNumber: PropTypes.string,
     address: PropTypes.string,
     attachments: PropTypes.arrayOf(PropTypes.string),
     createdAt: PropTypes.object

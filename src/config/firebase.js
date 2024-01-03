@@ -29,15 +29,25 @@ import { getFirestore } from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// const firebaseConfig = {
+//   apiKey: 'AIzaSyBmzHqtg_3swch_MdvlPIRJhClkZthy_sc',
+//   authDomain: 'ticket-management-app-e57fe.firebaseapp.com',
+//   projectId: 'ticket-management-app-e57fe',
+//   storageBucket: 'ticket-management-app-e57fe.appspot.com',
+//   messagingSenderId: '280643475681',
+//   appId: '1:280643475681:web:edac22ea9a582b7a673fa0',
+//   measurementId: 'G-E5TQGHZ058'
+// };
+
 const firebaseConfig = {
-  apiKey: 'AIzaSyBmzHqtg_3swch_MdvlPIRJhClkZthy_sc',
-  authDomain: 'ticket-management-app-e57fe.firebaseapp.com',
-  projectId: 'ticket-management-app-e57fe',
-  storageBucket: 'ticket-management-app-e57fe.appspot.com',
-  messagingSenderId: '280643475681',
-  appId: '1:280643475681:web:edac22ea9a582b7a673fa0',
-  measurementId: 'G-E5TQGHZ058'
-};
+  apiKey: 'AIzaSyBX_Kqoa0C0cyUwjVpx6cy2MZGJMfU6VwI',
+  authDomain: 'react-final-case.firebaseapp.com',
+  projectId: 'react-final-case',
+  storageBucket: 'react-final-case.appspot.com',
+  messagingSenderId: '137893464201',
+  appId: '1:137893464201:web:111d8d513c8505dea55e58',
+  measurementId: 'G-ER98JS2PKS'
+}
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig)

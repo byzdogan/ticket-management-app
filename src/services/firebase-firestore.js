@@ -51,6 +51,7 @@ export const saveTicketDataToFirestore = async (
       ticketContent: ticketContentInput,
       attachments: fileUrls,
       ticketStatus: 'beklemede',
+      adminAnswer: [],
       createdAt: serverTimestamp()
     })
     // to give the user a request code

@@ -10,11 +10,22 @@ const TicketContent = ({ data }) => {
       <div className='ticketContent'>{ticketContent}</div>
       <div className="adminAnswers">
       <span>Başvuru Yanıt</span>
-        {
+        {/* {
         adminAnswer && adminAnswer.map((item, index) => (
           <p key={index}>{item}</p>
         ))
-      }
+        } */}
+        {
+          adminAnswer &&
+          (Array.isArray(adminAnswer)
+            ? (
+                adminAnswer.map((item, index) => (
+            <p key={index}>{item}</p>
+                ))
+              )
+            : (
+          <p>{adminAnswer}</p>
+              ))}
       </div>
     </div>
   )
@@ -22,9 +33,12 @@ const TicketContent = ({ data }) => {
 
 TicketContent.propTypes = {
   data: PropTypes.shape({
-    ticketContent: PropTypes.string.isRequired,
-    adminAnswer: PropTypes.array
-  }).isRequired
+    ticketContent: PropTypes.string,
+    adminAnswer: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.arrayOf(PropTypes.string)
+    ])
+  })
 }
 
 export default TicketContent
